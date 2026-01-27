@@ -51,7 +51,11 @@ Data was cleaned, modeled, and transformed inside Power BI.
 - Data modeling and visualization best practices  
 
 ## Dashboard Preview
-![Suez Canal Bank Finance Dashboard](Screenshots/Suez_Canal_Bank_Dashboard.png)
+![Suez Canal Bank Finance Dashboard](https://github.com/mrwanahmedx/Suez-Canal-Bank-Finance-Dashboard/blob/main/Screenshot%202026-01-27%20212506.png)
+
+## Repository
+View the full portfolio:  
+[Suez Canal Bank Finance Dashboard]([https://github.com/mrwanahmedx/Suez-Canal-Bank-Finance-Dashboard](https://mrwanahmedx.github.io/portfolio.html))
 
 ## Use Case
 This dashboard is designed for:
