@@ -1,72 +1,84 @@
-# Suez Canal Bank – Finance Dashboard (Power BI)
+# Suez Canal Bank — Financial Performance Dashboard
 
-## Overview
-This project is a finance dashboard built in **Power BI**, inspired by a banking environment similar to Suez Canal Bank.  
-It analyzes **financial performance metrics** including revenue, earnings, and year-over-year (YoY) trends to provide actionable insights for management.
+Power BI portfolio project for multi-year banking financial analysis, with an emphasis on revenue, earnings, growth, balance-sheet indicators, and selected-year KPI interpretation.
 
-## Problem Statement
-Banks often have large volumes of financial data, making it hard to quickly understand:  
-- Which years had revenue growth or decline  
-- How earnings compare to revenue  
-- Overall year-over-year performance  
+> **Portfolio note:** this is an independent analytical project. It does not use confidential Suez Canal Bank data and should not be interpreted as an official bank report.
 
-Decision-makers need a **clear, interactive dashboard** to identify trends and make informed financial decisions.
+## Problem
 
-## Solution
-- Built a **Power BI dashboard** that combines revenue and earnings metrics  
-- Added **KPIs with conditional formatting** to highlight key insights  
-- Created **interactive year selection buttons** for drill-down analysis  
-- Designed **visualizations for executive-friendly storytelling**  
+A multi-year financial dashboard becomes misleading when it mixes different grains — for example, summing ratios across years or comparing a cumulative figure with a single-year KPI.
 
-## Dataset
-The dataset includes historical financial data across multiple years:
-- Revenue  
-- Earnings  
-- Market and financial indicators  
+This project is designed to make annual performance easier to inspect while keeping selected-year values, prior-year comparisons, and ratios analytically coherent.
 
-Data was cleaned, modeled, and transformed inside Power BI.
+## What the dashboard covers
 
-## Key Findings
-- Revenue and earnings trends over the last 20+ years are clearly visualized  
-- Year-over-year performance identifies periods of growth and decline  
-- KPIs make it easy to see which years underperformed or exceeded targets  
-- Interactive slicers allow decision-makers to focus on a specific year  
+- revenue and earnings trends,
+- year-over-year revenue / earnings movement,
+- total assets and cash-on-hand views,
+- P/E, operating margin, ROA, ROE, and debt/equity indicators,
+- year selection and comparison,
+- executive-style banking dashboard presentation.
 
-## Story / Insights
-- Early 2000s: steady growth in revenue, but earnings fluctuated  
-- 2010–2015: revenue grew moderately, earnings improved after cost optimization  
-- Recent years: slight decline in revenue growth; dashboard highlights areas to investigate for future strategy  
-- Visual storytelling allows finance teams to **quickly identify trends and risks**  
+## Dashboard preview
 
-## Key Features
-- Revenue vs Earnings analysis  
-- Year-over-Year (YoY) metrics  
-- KPI indicators with conditional formatting  
-- Interactive year selection using buttons/slicers  
-- Banking-style clean dashboard layout  
+![Suez Canal Bank financial dashboard](Screenshot%202026-01-27%20212506.png)
 
-## Tools & Technologies
-- **Power BI**  
-- **DAX** for calculated measures and YoY analysis  
-- Data modeling and visualization best practices  
+## Analytical design
 
-## Dashboard Preview
-![Suez Canal Bank Finance Dashboard](https://github.com/mrwanahmedx/Suez-Canal-Bank-Finance-Dashboard/blob/main/Screenshot%202026-01-27%20212506.png)
+```mermaid
+flowchart LR
+    A[Historical financial data] --> B[Power BI model]
+    B --> C[Selected-year context]
+    C --> D[Revenue / earnings KPIs]
+    C --> E[Balance-sheet KPIs]
+    C --> F[Valuation / profitability ratios]
+    D --> G[YoY comparisons]
+    E --> H[Executive dashboard]
+    F --> H
+    G --> H
+```
 
-## Repository
-View the full portfolio:  
-[Suez Canal Bank Finance Dashboard]([https://github.com/mrwanahmedx/Suez-Canal-Bank-Finance-Dashboard](https://mrwanahmedx.github.io/portfolio.html))
+The intended analytical rule is simple: **point-in-time and ratio KPIs should be interpreted at the selected-year grain, not summed across years.**
 
-## Use Case
-This dashboard is designed for:
-- Banking & finance teams  
-- Management performance monitoring  
-- Executive reporting  
-- Portfolio showcase & interview demonstration  
+## Files
 
-## Notes
-This project is for **educational and portfolio purposes only** and does not represent real or confidential data from Suez Canal Bank.
-  
+| File | Purpose |
+| --- | --- |
+| `ProjectSC.pbix` | Power BI project |
+| `Screenshot 2026-01-27 212506.png` | Dashboard preview |
+| `README.md` | Project documentation |
 
-LinkedIn:  
-https://www.linkedin.com/in/mrwan-ahmed/
+## Tech stack
+
+- Power BI
+- DAX / calculated measures
+- data modeling
+- financial KPI analysis
+- interactive slicers / dashboard navigation
+
+## Browser-based replica
+
+A tested interactive web recreation is available in **Data Observatory**. It keeps KPI calculations in one coherent selected-year context and includes regression checks around chart bounds and selected-year logic.
+
+**[Open the interactive web replica](https://mrwanahmedx.github.io/data-observatory/finance.html)**  
+**[View Data Observatory source](https://github.com/mrwanahmedx/data-observatory)**
+
+## What this project demonstrates
+
+- translating raw financial history into an executive dashboard,
+- separating flow metrics, point-in-time values, and ratios,
+- constructing prior-year comparisons,
+- designing a compact banking-style visual hierarchy,
+- validating that KPI context stays internally consistent.
+
+## Limitations
+
+- portfolio / illustrative project, not official financial reporting,
+- not a replacement for audited statements or regulatory disclosures,
+- the browser replica is a web recreation, not a `.pbix` file,
+- no confidential bank data is included.
+
+## Author
+
+**Marwan Ahmed**  
+[LinkedIn](https://www.linkedin.com/in/mrwan-ahmed/) · [GitHub](https://github.com/mrwanahmedx)
