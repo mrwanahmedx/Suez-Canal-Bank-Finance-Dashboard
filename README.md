@@ -21,7 +21,7 @@ This project is designed to make annual performance easier to inspect while keep
 
 ## Dashboard preview
 
-![Suez Canal Bank financial dashboard](Screenshot%202026-01-27%20212506.png)
+![Suez Canal Bank financial dashboard](dashboard-preview.png)
 
 ## Analytical design
 
@@ -45,7 +45,7 @@ The intended analytical rule is simple: **point-in-time and ratio KPIs should be
 | File | Purpose |
 | --- | --- |
 | `ProjectSC.pbix` | Power BI project |
-| `Screenshot 2026-01-27 212506.png` | Dashboard preview |
+| `dashboard-preview.png` | Dashboard preview |
 | `README.md` | Project documentation |
 
 ## Tech stack
