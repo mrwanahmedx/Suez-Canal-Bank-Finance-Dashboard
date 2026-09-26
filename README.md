@@ -46,6 +46,7 @@ The intended analytical rule is simple: **point-in-time and ratio KPIs should be
 | --- | --- |
 | `ProjectSC.pbix` | Power BI project |
 | `dashboard-preview.png` | Dashboard preview |
+| `Screenshot 2026-01-27 212506.png` | Legacy screenshot filename retained for project history; superseded by `dashboard-preview.png` |
 | `README.md` | Project documentation |
 
 ## Tech stack
